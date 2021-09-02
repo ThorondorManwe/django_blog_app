@@ -90,7 +90,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'blog',
         'USER': 'blog',
-        'PASSWORD': 'Golemyo123/',
+        'PASSWORD': '**********',
         'HOST': 'localhost' # missing part
     }
 }
@@ -137,7 +137,7 @@ STATIC_URL = '/static/'
 # E-mail SMTP server
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'cr7488903@gmail.com'
-EMAIL_HOST_PASSWORD = 'Golemyo123/'
+EMAIL_HOST_USER = '************'
+EMAIL_HOST_PASSWORD = '**********'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
