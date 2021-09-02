@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     # Apps for The Django sitemap framework
     'django.contrib.sites',
     'django.contrib.sitemaps',
+    # App para Django
+    'django.contrib.postgres',
     # Default apps
     'django.contrib.admin',
     'django.contrib.auth',
@@ -83,8 +85,13 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'blog',
+        'USER': 'blog',
+        'PASSWORD': 'Golemyo123/',
+        'HOST': 'localhost' # missing part
     }
 }
 
