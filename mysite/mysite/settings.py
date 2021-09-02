@@ -30,10 +30,14 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+SITE_ID = 1
 INSTALLED_APPS = [
     # My apps
     'blog.apps.BlogConfig',
     'taggit',
+    # Apps for The Django sitemap framework
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
     # Default apps
     'django.contrib.admin',
     'django.contrib.auth',
